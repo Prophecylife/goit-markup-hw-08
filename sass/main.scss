@@ -1,0 +1,28 @@
+// utilities
+@import "./vendors/normalize.scss";
+@import "./utils/variables";
+@import "./utils/visually_hidden";
+
+// Base
+@import "./base/common";
+@import "./base/section";
+@import "./base/container";
+
+// Components
+@import "./components/button";
+@import "./components/logo";
+@import "./components/social-list";
+@import "./components/title";
+@import "./components/contacts";
+@import "./components/modal-backdrop";
+@import "./components/modal-form";
+
+// Layouts
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/team";
+@import "./layout/portfolio";
+@import "./layout/footer";
+@import "./layout/features";
+@import "./layout/clients";
+@import "./layout/advantages";

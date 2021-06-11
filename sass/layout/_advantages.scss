@@ -1,0 +1,51 @@
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+
+  & p {
+    font-size: $font-size-primary;
+    line-height: 1.71;
+  }
+  & .title {
+    font-weight: $font-weight-bold;
+    font-size: $font-size-primary;
+    line-height: $line-height-primary;
+    text-transform: uppercase;
+  }
+}
+
+.advantages-list__item {
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc((100% - 4 * 30px) / 4);
+
+  &:nth-child(1)::before {
+    background-image: url("../images/antenna.svg");
+  }
+
+  &:nth-child(2)::before {
+    background-image: url("../images/clock.svg");
+  }
+
+  &:nth-child(3)::before {
+    background-image: url("../images/diagram.svg");
+  }
+
+  &:nth-child(4)::before {
+    background-image: url("../images/astronaut.svg");
+  }
+
+  &::before {
+    display: block;
+    height: 120px;
+    content: "";
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+}

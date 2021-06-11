@@ -1,0 +1,33 @@
+.section.features {
+  padding-top: 0;
+}
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.features-list__item {
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc((100% - 3 * 30px) / 3);
+  position: relative;
+
+  & .overlay {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    color: #ffffff;
+    font-size: $font-size-primary;
+    line-height: $line-height-primary;
+    letter-spacing: $letter-spacing-primary;
+    text-transform: uppercase;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    margin: 0;
+    text-align: center;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+}
