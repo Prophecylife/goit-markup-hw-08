@@ -86,11 +86,61 @@
             <li class="samples-list__item">
               <a class="samples-list__link" href="">
                 <div class="samples-list__wrapper">
-                  <img
-                    src="./images/technocrack.jpeg"
-                    alt="laptop"
-                    width="370px"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-works/webp/desk-tech.webp   1x,
+                        ./images/portfolio-works/webp/desk-tech2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-works/jpg/desk-tech.jpg   1x,
+                        ./images/portfolio-works/jpg/desk-tech2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-works/webp/tablet-tech.webp   1x,
+                        ./images/portfolio-works/webp/tablet-tech2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-works/jpg/tablet-tech.jpg   1x,
+                        ./images/portfolio-works/jpg/tablet-tech2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-works/webp/mobile-tech.webp   1x,
+                        ./images/portfolio-works/webp/mobile-tech2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 480px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-works/jpg/mobile-tech.jpg   1x,
+                        ./images/portfolio-works/jpg/mobile-tech2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="samples-list__image"
+                      src="./images/portfolio-works/jpg/desk-tech.jpg"
+                      alt="tech"
+                    />
+                  </picture>
                   <p class="samples-list__overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
