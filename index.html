@@ -27,20 +27,23 @@
             <use href="./images/svg-sprite.svg#icon-menu-burger"></use>
           </svg>
         </button>
-        <a href="mailto:info@devstudio.com" class="contacts mail header-contacts__gray">
+        <ul class="page-header__contacts-list">
+          <li class="page-header__contacts-item"><a href="mailto:info@devstudio.com" class="contacts mail header-contacts__gray">
           <svg class="envelope-icon">
             <use href="./images/svg-sprite.svg#icon-envelope">
             </use>
           </svg>
           info@devstudio.com
-        </a>
-        <a href="tel:+380961111111" class="contacts tel header-contacts__gray">
+        </a></li>
+          <li class="page-header__contacts-item">
+            <a href="tel:+380961111111" class="contacts tel header-contacts__gray">
            <svg class="smartphone-icon">
             <use href="./images/svg-sprite.svg#icon-smartphone">
             </use>
           </svg>
           +38 096 111 11 11
-        </a>
+        </a></li>
+        </ul>
       </div>
       <div class="mobile-menu" data-menu>
         <div class="container mobile-menu__container">
@@ -51,7 +54,7 @@
           </button>
           <ul class="mobile-menu__nav">
             <li class="mobile-menu__nav-item">
-              <a class="mobile-menu__nav-link"href="">
+              <a class="mobile-menu__nav-link mobile-menu__nav-link--active"href="">
                 Студия
               </a>
             </li>
@@ -66,6 +69,28 @@
               </a>
             </li>
           </ul>
+          <div class="mobile-menu__footer-wrapper">
+          <ul class="mobile-menu__footer-contacts-list">
+            <li class="footer-contacts-list__item phone">
+              <a href="tel:+380961111111" class="mobile-menu__nav-phone">
+             +38 096 111 11 11
+              </a>
+            </li>
+            <li class="footer-contacts-list__item email">
+              <a href="mailto:info@devstudio.com" class="mobile-menu__nav-email">
+              info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="mobile-menu__social-list">
+            <li class="mobile-menu__social-item"><a class="mobile-menu__social-links">Instagram</a></li>
+            <li class="mobile-menu__social-item"><a class="mobile-menu__social-links">Twitter</a></li>
+            <li class="mobile-menu__social-item"><a class="mobile-menu__social-links">Facebook</a></li>
+            <li class="mobile-menu__social-item"><a class="mobile-menu__social-links">LinkedIn</a></li>
+          </ul>
+
+          </div>
+          
           </div>
         </div>
     </header>
