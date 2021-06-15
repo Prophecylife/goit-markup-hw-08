@@ -13,18 +13,26 @@
   height: 100vh;
   background-color: rgba(48, 48, 48, 0.5);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
 }
 
 .modal {
-  width: 528px;
-  min-height: 580px;
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    min-height: 580px;
+    padding: 40px;
+  }
+  width: 450px;
+  min-height: 609px;
   background-color: #ffffff;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 40px;
+  padding-right: 32px;
+  padding-left: 48px;
+  padding-top: 36px;
 }
 
 .modal-close__btn {

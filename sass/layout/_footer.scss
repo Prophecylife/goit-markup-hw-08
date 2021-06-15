@@ -1,8 +1,15 @@
-.social-footer .social-list__link {
-  background-color: #44464e;
-  &:hover,
-  &:focus {
-    background-color: var(--accent-color);
+.social-footer {
+  & .social-list__link {
+    background-color: #44464e;
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
+  }
+  & .social-list {
+    @media screen and(min-width:1200px) {
+      justify-content: flex-start;
+    }
   }
 }
 
@@ -17,6 +24,7 @@
 
   & .logo-white {
     margin-top: 60px;
+    margin-right: 0;
   }
 
   & address {
@@ -28,13 +36,6 @@
   }
 }
 
-.footer-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
-}
-
 .social-footer .title {
   font-size: $font-size-primary;
   color: #ffffff;
@@ -42,20 +43,50 @@
   line-height: $line-height-primary;
   text-transform: uppercase;
   margin-bottom: 20px;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .footer-list__item {
-  margin-left: 30px;
-  margin-top: 30px;
-  flex-basis: calc((100% - 4 * 30px) / 4);
+  margin-left: 60px;
+  margin-top: 60px;
+  flex-basis: calc(100% - 60px);
+  justify-content: center;
+
+  @media screen and(min-width: 768px) {
+    flex-basis: calc((100% - 2 * 60px) / 2);
+  }
+  @media screen and(min-width: 1200px) {
+    flex-basis: calc((100% - 4 * 60px) / 4);
+
+    &:last-child {
+      flex-basis: calc((100% - 2 * 60px) / 2);
+    }
+  }
   &.join-form {
     flex-grow: 2;
   }
+  &:not(:last-child) {
+    @media screen and (max-width: 1199px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+.footer-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -60px;
+  margin-top: -60px;
+}
+.footer-contacts__grey {
+  margin-top: 9px;
 }
 
 .footer-contacts__grey {
   color: rgba(255, 255, 255, 0.6);
-  margin-top: 9px;
 }
 
 .join-form__text {
@@ -65,6 +96,10 @@
   line-height: $line-height-primary;
   font-size: $font-size-primary;
   text-transform: uppercase;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+    margin-bottom: 20px;
+  }
 }
 
 .join-form__input {
@@ -75,6 +110,11 @@
   border-radius: 4px;
   width: 100%;
   color: #ffffff;
+  max-width: 450px;
+  margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    max-width: 358px;
+  }
 
   &::placeholder {
     font-size: 16px;
@@ -97,6 +137,7 @@
 .join-form__button {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   display: flex;
+  width: 200px;
   padding-left: 29px;
   padding-right: 28px;
   padding-top: 10px;
@@ -110,4 +151,10 @@
 
 .join-form__form {
   display: flex;
+  align-items: flex-start;
+
+  @media screen and (max-width: 1199px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }

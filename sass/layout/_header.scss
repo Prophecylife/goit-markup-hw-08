@@ -15,6 +15,9 @@
   .page-header {
     padding-top: 10px;
     padding-bottom: 10px;
+    &__contacts-list {
+      display: none;
+    }
     &__mobile-icon {
       width: 40px;
       height: 40px;
@@ -44,7 +47,7 @@
   .page-header__contacts-list {
     margin-left: auto;
   }
-  .page-header__contacts-item {
+  .page-header__contacts-item:not(:first-child) {
     margin-top: 10px;
   }
 }
@@ -73,6 +76,10 @@
     & .container {
       display: flex;
       align-items: center;
+    }
+    @media screen and (max-width: 1199px) {
+      padding-top: 21px;
+      padding-bottom: 21px;
     }
   }
 
